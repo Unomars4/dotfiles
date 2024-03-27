@@ -19,6 +19,10 @@ fi
 printf "\nInstalling other brew casks...\n"
 eval "brew install gh neovim tmux fzf"
 
+# Install Yarn for easier (and faster) Node.js dependency management
+printf "\nInstalling Yarn\n"
+eval "brew install yarn --ignore-dependencies"
+
 # Install Fonts
 printf "\n Install Fonts\n"
 eval "brew install --cask font-fira-code font-noto-emoji"
@@ -41,11 +45,11 @@ printf "\nInstalling ZSH syntax highlighting plugin\n"
 eval "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 
 # Copy ZSH config
-printf "${YELLOW}Copying ZSH config into ~/.zshrc...${NORMAL}\n"
+printf "Copying ZSH config into ~/.zshrc...\n"
 eval "cp ./.zshrc ~/.zshrc"
 
 # Install NVM
-printf "\n${GREEN}Installing NVM...${NORMAL}\n"
+printf "\nInstalling NVM...\n"
 eval "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash"
 
 # Refresh ZSH config
