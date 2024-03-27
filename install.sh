@@ -58,7 +58,7 @@ eval "nvm install --lts"
 
 # Copy Configs
 printf "\n Copy All Configs\n"
-eval "cp ./.config ~/.config"
+eval "cp -r ./.config ~/.config"
 
 # Browsers
 eval "open https://www.google.com/chrome/"
