@@ -105,13 +105,15 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias dir="ls -a"
 alias ga="git add"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gmm="git merge main"
+alias gac="ga . && gc"
 alias browse="gh repo view --web"
 alias start="npm start"
 alias dev="npm run dev"
 alias build="npm run build"
 alias sourceme="source ~/.zshrc"
+alias root="cd $HOME"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
