@@ -7,10 +7,13 @@ require('lazy').setup({
   require 'base/plugins/which-key',
   require 'base/plugins/telescope',
   require 'base/plugins/lspconfig',
+  require 'base/plugins/autopairs',
+  require 'base/plugins/autotags',
   require 'base/plugins/conform',
   require 'base/plugins/cmp',
   require 'base/plugins/gruvbox',
   require 'base/plugins/todo-comments',
+  require 'base/plugins/emmet',
   -- Collection of various small independent plugins/modules
   require 'base/plugins/mini',
   require 'base/plugins/treesitter',
